@@ -1,1 +1,3 @@
-$ git checkout -b dev
+$ git checkout -b reviews
+let serch = querySelector('.serch')
+let new_post = querySelector('.new post') 
