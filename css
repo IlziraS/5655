@@ -6,7 +6,7 @@ body{
     background-color: #C7C9C6;
     }
     
-     .menu{
+.menu{
     width: 1221px;
     height: 80px;
     display: flex;
@@ -17,7 +17,7 @@ body{
     margin: 0 auto;
     padding-top: 5px;
     }
-    .menu-elements{
+.menu-elements{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -28,11 +28,13 @@ body{
     text-decoration: none;
     }
 
-    .container{
+.container{
     display: flex;
     width: 1440px;
     height: 550px;
     padding-left: 40px;
     padding-right: 50px;
     }
-
+main{
+    background: #F2F2F2;
+    
