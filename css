@@ -9,13 +9,13 @@ body{
      .menu{
     width: 1221px;
     height: 80px;
-    padding-top: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap; 
     justify-content:space-evenly;
-    margin: auto;
-
+    justify-content:space-evenly ;
+    margin: 0 auto;
+    padding-top: 5px;
     }
     .menu-elements{
     font-family: 'Inter';
