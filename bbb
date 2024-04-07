@@ -1,3 +1,20 @@
 $ git checkout -b reviews
 let serch = querySelector('.serch')
 let new_post = querySelector('.new post') 
+let button = document.querySelector('.btn')
+
+let to_complete = this.to_complete = document.getElementById('to_complete');
+to_complete.addEventListener('click', conclusion)
+
+function conclusion() {
+  let out = this.out = document.getElementById('out');
+  let textarea = this.textarea = document.getElementById('textarea').value;
+  if (textarea) {
+    this.out.textContent += textarea;
+  } else {
+    return false
+  }
+}
+
+
+
