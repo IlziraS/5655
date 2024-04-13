@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body{
+    margin: 0;
+    }
+    .header{
+    height: 80px;
+    background-color: #C7C9C6;
+    }
+    
+  .menu{
+    width: 1221px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; 
+    justify-content:space-evenly;
+    justify-content:space-evenly ;
+    margin: 0 auto;
+    padding-top: 5px;
+    }
+  .menu-elements{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;  
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+    }
+
+  .container{
+    display: flex;
+    width: 1440px;
+    height: 550px;
+    padding-left: 40px;
+    padding-right: 50px;
+    }
+  main{
+    background: #F2F2F2;}
+  </style>
+  <script>
+    let serch = querySelector('.serch')
+    let new_post = querySelector('.new post') 
+    let button = document.querySelector('.btn')
+
+    let to_complete = this.to_complete = document.getElementById('to_complete');
+    to_complete.addEventListener('click', conclusion)
+
+    function conclusion() {
+      let out = this.out = document.getElementById('out');
+      let textarea = this.textarea = document.getElementById('textarea').value;
+      if (textarea) {
+        this.out.textContent += textarea;
+      } else {
+        return false
+      }
+    }
+
+    $(document).ready(function(){
+        $(document).on('click', 'add_comment', function(){
+          var form = $('form[name="form"]');
+          form.css("display",'block');
+          $('add_comment').replaceWith(form);
+        });
+    
+        $(document).on('click', "input[name='send']", function(){
+          var comment = $('textarea[name="comment"]').val();
+          alert('Загрузка');
+          $('<p>'+ comment + '</p>').appendTo('#comments'); });
+    });
+  </script>
+  <title>KINO</title>
+</head>
+<body>
+  <header>
+    <div class = 'container'>
+        <div>
+          <span class="logo"> KINO</span>
+        </div>
+        <div class='presentation' ></div>
+        <a class='menu-elements' href=''>Рецензии</a>
+        <form>
+           <p class='menu-element'><input type='search' name='q' placeholder='поиск'>
+           <input type='submit' value='найти'></p> 
+        </form>
+        <a class='menu-elements' href=''>профиль</a></div>
+  </header>
+  <main>
+    <div id = 'comments'>
+      <p>Com1</p>
+      <p>Com2</p>
+    </div>
+    
+    <form name = 'form' action="a" method="post" id="form" style="display:none" onsubmit="return false">
+      <textarea name="field" id="textarea" cols="30" rows="10"></textarea><br/>
+      <input name = "send" type="submit" value="Написать рецензию" id="done"/>
+    </form>
+    
+    <a href="a" onclick="return false" id="add_comment">Написать рецензию</a>
+
+
+    <div class='container-posts'>
+    <div class='post'>
+      <p class='text-post'>smth</p>
+    </div>
+    <div class='post'>
+        <p class='text-post'>smth</p>
+    </div>
+    </div>
+  </main>
+  <footer>
+    
+  </footer>
+</body>
+</html>
